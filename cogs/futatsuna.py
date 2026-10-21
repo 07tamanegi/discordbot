@@ -45,4 +45,4 @@ class Futatsuna(commands.Cog):
 
 
 async def setup(bot):
-    await bot.add_cog(Nitaname(bot))
+    await bot.add_cog(Futatsuna(bot))
