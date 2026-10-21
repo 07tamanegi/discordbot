@@ -57,4 +57,5 @@ async def on_message(message):
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 keep_alive()
+print("Botを起動します")
 bot.run(TOKEN)
