@@ -5,7 +5,7 @@ from keep_alive import keep_alive
 
 class MyBot(commands.Bot):
     async def setup_hook(self):
-        await self.load_extension("cogs.nitaname")
+        await self.load_extension("cogs.futatsuna")
         await self.tree.sync()
 
 intents = discord.Intents.default()
