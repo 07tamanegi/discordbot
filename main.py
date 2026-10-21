@@ -1,4 +1,3 @@
-```python
 import discord
 import os
 from keep_alive import keep_alive
@@ -25,9 +24,5 @@ async def on_message(message):
         await message.reply("ありがとうございます😁")
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-
-# Webサーバの立ち上げ
 keep_alive()
-
 client.run(TOKEN)
-```
