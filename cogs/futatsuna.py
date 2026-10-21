@@ -5,21 +5,15 @@ from discord import app_commands
 from discord.ext import commands
 
 
-class Nitaname(commands.Cog):
+class Futatsuna(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
     @app_commands.command(
-        name="nitaname",
+        name="futatsuna",
         description="あなたの二つ名をランダム生成します",
-        name_localizations={
-            discord.Locale.japanese: "二つ名"
-        },
-        description_localizations={
-            discord.Locale.japanese: "あなたの二つ名をランダム生成します"
-        }
     )
-    async def nitaname(self, interaction: discord.Interaction):
+    async def futatsuna(self, interaction: discord.Interaction):
         first = [
             "漆黒", "孤高", "混沌", "究極", "伝説",
             "爆速", "深夜テンション", "寝不足",
