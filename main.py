@@ -28,14 +28,8 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if "愛媛修飾" in message.content:
-        await message.reply("後置修飾")
-
-    if "徳島修飾" in message.content:
-        await message.reply("後置修飾")
-
-    if "後置修飾" in message.content:
-        await message.reply("ありがとうございます😀")
+    if "ping" in message.content:
+        await message.reply("pong")
 
 
 TOKEN = os.getenv("DISCORD_TOKEN")
